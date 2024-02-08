@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/juText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="JU"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                />
+            <Space
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/iitText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="IIT"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showText"
+            android:visibility="gone"
+            android:text="testing"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
